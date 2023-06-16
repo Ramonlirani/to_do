@@ -60,7 +60,7 @@ export const InputList = () => {
       .post('http://192.168.1.17:4000/newTask', newTask) // Pass the newTask object directly
       .then((resp) => {
         console.log(resp.data);
-        setList([...list, resp.data]);
+        setList([...list]);
         listTask();
         toast.show({
           render: () => {
